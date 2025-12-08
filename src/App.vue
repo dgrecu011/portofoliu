@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <div class="min-h-screen bg-slate-950 text-slate-100">
     <div class="pointer-events-none absolute inset-0 -z-10 overflow-hidden" aria-hidden="true">
       <div class="absolute -left-24 top-10 h-72 w-72 rounded-full bg-cyan-400/20 blur-3xl"></div>
@@ -20,7 +20,7 @@
         <div class="space-y-4">
           <div class="flex items-center gap-3">
             <img
-              src="/src/poza/image.png"
+              :src="avatar"
               alt="Portret Dionis Grecu"
               class="h-14 w-14 rounded-full object-cover ring-2 ring-cyan-300/50"
             />
@@ -217,6 +217,7 @@ const done = computed(() => state.design && state.ux && state.livrare)
 </template>
 
 <script setup>
+import avatar from './poza/image.png';
 const projects = [
   {
     title: 'Tehnica IT',
@@ -278,5 +279,7 @@ const timeline = [
   @apply inline-flex items-center gap-1 rounded-lg border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-slate-200;
 }
 </style>
+
+
 
 
