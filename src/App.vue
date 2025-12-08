@@ -22,7 +22,7 @@
             <img
               :src="avatar"
               alt="Portret Dionis Grecu"
-              class="h-14 w-14 rounded-full object-cover ring-2 ring-cyan-300/50"
+              class="h-32 w-32 rounded-full object-cover ring-4 ring-cyan-300/60 shadow-lg shadow-cyan-400/20 sm:h-36 sm:w-36"
             />
             <div>
               <p class="text-xs uppercase tracking-wide text-slate-400">Dionis Grecu</p>
